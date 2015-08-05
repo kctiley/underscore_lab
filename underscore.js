@@ -10,9 +10,9 @@ var _ = {
       add = add + arguments[i];
     }    
     return add/arguments.length;
-  }
-
-
+  },
+//
+//
 // contains - returns true is a given value is present in an array
 // _.contains([7,55,99], 99);
 // => true
@@ -23,5 +23,21 @@ var _ = {
       }      
     };
     return false; 
-  }
+  },
+//  
+//
+//first - returns the first element in an array
+//_.first([5, 4, 3, 2, 1]);
+//=> 5
+ first: function(inputArray) {   
+    return inputArray[0];
+  },
+
+
+
 };
+
+
+
+
+
