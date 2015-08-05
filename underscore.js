@@ -32,7 +32,14 @@ var _ = {
  first: function(inputArray) {   
     return inputArray[0];
   },
-
+//
+//
+// last - returns the last element in an array
+// _.last([5, 4, 3, 2, 1]);
+// => 1
+ last: function(inputArray) {
+    return inputArray[inputArray.length - 1];    
+  }
 
 
 };
