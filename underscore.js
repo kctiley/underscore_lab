@@ -11,4 +11,17 @@ var _ = {
     }    
     return add/arguments.length;
   }
+
+
+// contains - returns true is a given value is present in an array
+// _.contains([7,55,99], 99);
+// => true
+  contains: function(inputArray, searchElement) {
+    for (var i = 0; i < inputArray.length; i++){
+      if (inputArray[i] == searchElement){
+        return true;
+      }      
+    };
+    return false; 
+  }
 };
