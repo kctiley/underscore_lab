@@ -65,18 +65,32 @@ var _ = {
 // _.min(numbers);
 // => 2
   min: function(inputArray) {
-    var result = [];
     var lowNumber = inputArray[0];
     for (var i = 0; i < inputArray.length; i++){
       if (inputArray[i] <= lowNumber){
         lowNumber = inputArray[i];
       };
     };
-    result = lowNumber;
-    return result;
+    return lowNumber;
   },
 
+//
+//
+// sample - Produce a random sample from the list. Pass a number to return n random elements from the list. Otherwise a single random item will be returned.
+// _.sample([1, 2, 3, 4, 5, 6]);
+// => 4
 
+// _.sample([1, 2, 3, 4, 5, 6], 3);
+// => [1, 6, 2]
+  sample: function(inputArray, numSamples) {
+    var result = [];
+    numSamples = numSamples || 1;
+    for (var i = 0; i < numSamples; i++) {
+      var randomIndex = Math.floor(inputArray.length  * Math.random());
+      result.push(inputArray[randomIndex]);
+    }
+    return result;  
+  },
 };
 
 
