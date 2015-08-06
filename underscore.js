@@ -64,6 +64,17 @@ var _ = {
 // var numbers = [10, 5, 100, 2, 1000];
 // _.min(numbers);
 // => 2
+  min: function(inputArray) {
+    var result = [];
+    var lowNumber = inputArray[0];
+    for (var i = 0; i < inputArray.length; i++){
+      if (inputArray[i] <= lowNumber){
+        lowNumber = inputArray[i];
+      };
+    };
+    result = lowNumber;
+    return result;
+  },
 
 
 };
