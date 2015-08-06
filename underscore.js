@@ -6,7 +6,7 @@
 var _ = {
   average: function() {
     var add = null;
-    for (i = 0; i < arguments.length; i++){
+    for (var i = 0; i < arguments.length; i++){
       add = add + arguments[i];
     }    
     return add/arguments.length;
@@ -49,7 +49,7 @@ var _ = {
   max: function(inputArray) {
     var result = [];
     var highNumber = 0;
-    for (i = 0; i < inputArray.length; i++){
+    for (var i = 0; i < inputArray.length; i++){
       if (inputArray[i] > highNumber){
         highNumber = inputArray[i];
       };
@@ -57,6 +57,14 @@ var _ = {
     result = highNumber;
     return result;
   },
+//
+//  
+//
+// min - returns the minimum value in an array
+// var numbers = [10, 5, 100, 2, 1000];
+// _.min(numbers);
+// => 2
+
 
 };
 
